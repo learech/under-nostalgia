@@ -80,7 +80,15 @@ a {
 
 nav ul li:hover {
     transform: scale(1.2);
+    transition:1.s
+
 }
+
+nav ul li {
+    transition:0.8s
+}
+
+
 
 .liMenu{
     margin-bottom: 5px;
@@ -278,23 +286,29 @@ nav ul li:hover {
 
  .nosotrosContenedor {
      display: flex;
-     flex-direction: column;
+     flex-direction:row;
+     flex-wrap: wrap;
      text-align: center;
+     justify-content: center;
  }
 
  .nosotrosContenedor img {
+     margin: 1rem;
      display: flex;
-     width: 100%;
+     width: 500px;
+     justify-content: center;
  }
 
- .nosotrosContenedor h3 {
+ .textoNosotros h3 {
+     margin: 1rem;
+     font-size: 2rem;
      font-weight: 500;
-     margin: 1.5rem;
  }
 
- .nosotrosContenedor p {
-     margin-left: 1rem;
-     margin-right: 1rem;
+ .textoNosotros p {
+     margin-left: 2rem;
+     margin-right: 2rem;
+     font-size: 1.2rem;
  }
 
  /* Cierre derechos de autor*/
@@ -427,6 +441,10 @@ iframe {
     align-items: center
 }
 
+.formulario {
+    margin: 2rem;
+}
+
 .contactoH2 {
     font-weight: 600;
     text-align: center;
@@ -542,6 +560,10 @@ label {
         flex-direction: column;
     }
 
+    .formulario {
+        width: 350px;
+    }
+
 }
 
     @media only screen and (min-width:900px) {
@@ -587,6 +609,38 @@ label {
         flex-direction: column;
         text-align: center;
     }
+
+    iframe {
+        margin-bottom: 2rem;
+    }
+
+   
+
+    .subtituloAgente {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contenidoAgente {
+        display: flex;
+        align-items: center;
+    }
+
+    .contenidoAgente img {
+        width: 250px;
+        float:left;
+    }
+
+    .contenidoAgente p {
+        font-size: 1.3rem;
+    }
+
+
+    .formulario {
+        width: 500px;
+    }
+
+    
 
 
 
