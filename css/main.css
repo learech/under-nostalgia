@@ -1,0 +1,594 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    color: antiquewhite;
+}
+
+/* Encabezado y menú de navegación*/
+
+header {
+    display: grid;
+    grid-template-columns:10% 30% auto ;
+    align-items: center;
+}
+ 
+ .contenedor {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+header {
+    background-image: linear-gradient(to right, #c1c161 0%, #c1c161 0%, #d4d4b1 100%);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+
+.logo {
+    margin: 0.5rem;
+    width: 3rem;
+}
+
+nav ul {
+    font-weight: 500;
+    color: black;
+}
+
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 1rem;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.liMenu{
+    margin-bottom: 5px;
+    font-weight: 500;
+    background-color:#c1c161 ;
+    border-radius: 0.8px solid;
+}
+
+/* Cierre de menú de navegación*/
+
+/*Contenido principal (main index)*/
+
+.indexH2 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.mainP {
+    font-size: 1.5rem;
+}
+
+.mainP2 {
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #c1c161;
+}
+
+.imgIndex {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 5%;
+}
+
+.indexP {
+    text-align: center;
+}
+
+.indexH3 {
+    margin:0 1rem 2rem 1rem;
+    color: #c1c161;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.indexDisco {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.imgDisco {
+    display: flex;
+    justify-content: center;
+}
+
+.indexDisco img {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.indexDisco p {
+    margin: 0.5rem;
+}
+
+.subtituloP {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+.slider{
+    text-align: center;
+}
+
+.slider{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+ }
+
+.slider ul{
+     display: flex;
+     padding: 0;
+     width: 400%;
+ 
+     animation: cambio 20s infinite alternate linear;
+ }
+
+ .slider h5 {
+     margin-top: 2rem;
+     font-size: 2rem;
+ }
+ 
+ .slider li{
+     width: 100%;
+     list-style: none;
+ }
+ 
+ .slider img{
+     margin-top: 1rem;
+     width: 20rem;
+ }
+ 
+ @keyframes cambio {
+     0% {margin-left: 0;}
+     20% {margin-left: 0;}
+ 
+     25% {margin-left: -100%;}
+     45% {margin-left: -100%;}
+ 
+     50% {margin-left: -200%;}
+     70% {margin-left: -200%;}
+ 
+     75% {margin-left: -300%;}
+     100% {margin-left: -300%;}
+ }
+
+ h4 {
+     font-size: xx-large;
+     font-weight: lighter;
+ }
+
+ /*Sección film*/
+ .sectionFilm img {
+     width: 360px;
+     
+ }
+
+ .parrafoFilm {
+     font-size:2rem ;
+     font-weight: 600;
+     text-align: center;
+ }
+
+ .sectionFilm {
+     display: none;
+ }
+
+ /*Cierre main index*/
+
+
+ /* Derechos de autor*/
+
+ footer {
+     margin-top: 2rem;
+     background-color: #212529;
+     color: white;
+     text-align: center;
+     line-height: 1.5;
+     -webkit-text-size-adjust: 100%;
+ }
+
+ .footerP1 {
+     padding: 0.5rem;
+     margin-bottom: 1rem;
+ }
+
+ h5, h6 {
+     margin-bottom: 0.6rem;
+     font-size: 1.3rem;
+     font-weight: 400;
+ }
+
+.footerP2 {
+    margin-bottom: 0.5rem;
+}
+ 
+.irArriba {
+    margin: 0.4rem;
+    padding: 0.4rem;
+    display: inline-block;
+    color: white;
+    background-color:#0d6efd;
+    border: 1px solid transparent; 
+    border-radius: 1rem solid ;
+   
+ }
+
+ .footerP3 {
+     padding: 1.5rem;
+ }
+
+ /*Sección Nosotros*/
+ .nosotrosTitulo{
+     font-size: 2rem;
+     font-weight: 500;
+     text-align: center;
+ }
+
+ .nosotrosContenedor {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+
+ .nosotrosContenedor img {
+     display: flex;
+     width: 100%;
+ }
+
+ .nosotrosContenedor h3 {
+     font-weight: 500;
+     margin: 1.5rem;
+ }
+
+ .nosotrosContenedor p {
+     margin-left: 1rem;
+     margin-right: 1rem;
+ }
+
+ /* Cierre derechos de autor*/
+
+ /*sección Discos*/
+
+ .h2Titulo {
+     font-size: 2rem;
+     font-weight: 500;
+     text-align: center;
+ }
+
+ .h3Discos {
+     font-weight: 500;
+     text-align: center;
+ }
+
+ span{
+     color: #c1c161;
+ }
+
+ .contenedorDiscos {
+     margin: 2rem;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+.disco{
+    margin: 1rem;
+}
+
+.disco img {
+    width: 250px;
+}
+
+.disco p {
+    font-weight: 500;
+}
+
+/*Cierre sección discos*/
+
+
+/*sección Varios*/
+
+.tituloVarios {
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contenedorVarios {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+}
+
+.contenedorVarios h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contenedorVarios h4 {
+    margin: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.contenedorVarios p {
+    font-weight: 200;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    vertical-align: baseline;
+}
+
+.contenedorVarios img {
+     width: 300px;
+}
+
+.parrafoVideo {
+     font-size: 1.5rem;
+     margin-top: 2rem;
+}
+
+iframe {
+    display: flex;
+    width: 100%;
+}
+
+.libroVarios {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.libroVarios h5 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.libroVarios img {
+    margin: 1.5rem;
+    width: 250px;
+}
+
+.libroVarios p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+/*Cierre sección Varios*/
+
+
+/*Sección Contacto*/
+
+.mainContacto {
+    background-image: url(/img/1560635.jpg);
+}
+
+.mainContacto {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center
+}
+
+.contactoH2 {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.mainContacto form {
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    border-radius: 3px;
+    background: #fff;
+    color: #2b2b2b;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.mainContacto form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contactoInput,
+.contactoRadio,
+.checkbox-group {
+    margin-bottom: 10px;
+}
+
+.contactoInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactoInput label,
+.contactoRadio .label {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.contactoInput input {
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contactoInput input:focus,
+.contactoInput input:active {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.contactoCheckbox {
+    margin: 20px 0;
+}
+
+.botonContenedor {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botonContenedor button {
+    outline: none;
+    border: none;
+    background: #2f79ff;
+    color: #fff;
+    padding: 7px 13px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.botonContenedor button:focus,
+.botonContenedor button:active {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.41);
+}
+
+#formAbierto {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width:600px) {
+
+    /*index*/
+
+    .imgDisco {
+        display: flex;
+        align-self: center;
+        width: 400px;
+    }
+
+    /*Nosotros*/
+
+   
+
+    /*Discos*/
+    
+    .contenedorDiscos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*Varios*/
+
+    iframe {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+    @media only screen and (min-width:900px) {
+     
+    .imgIndex {
+            width: 500px;
+    }
+
+    .indexBody {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-areas: "header header"
+                             "main slider"
+                             "main sectionFilm"
+                            "footer footer";
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+       grid-area: main;
+    }
+
+    .slider {
+        grid-area: slider;
+    }
+
+    .sectionFilm {
+        grid-area: sectionFilm;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    .sectionFilm {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+
+    }
